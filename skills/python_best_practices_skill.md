@@ -59,19 +59,25 @@ Provide a consistent foundation for Python development by combining modern style
 project-root/
   README.md
   environment.yml
-  application/
-    services.py
-    workflows.py
-  domain/
-    entities.py
-    value_objects.py
-    services.py
-  infrastructure/
-    persistence.py
-    mlops.py
+  src/
+    domain/
+      entities.py
+      services.py
+    application/
+      workflows.py
+    infrastructure/
+      persistence.py
+      mlops.py
   tests/
-    test_domain.py
-    test_application.py
+    unit/
+      test_domain.py
+      test_infrastructure.py
+    integration/
+      test_application.py
+  scripts/
+    generate_documentation_commit_push.py
+  wiki/
+    architecture.md
 ```
 
 ## Example Conda environment file

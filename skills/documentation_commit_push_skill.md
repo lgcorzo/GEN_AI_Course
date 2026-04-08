@@ -57,15 +57,17 @@ The documentation follows MLOps lifecycle standards and Domain-Driven Design (DD
 project-root/
   README.md
   environment.yml
-  skills/
-    documentation_commit_push_skill.md
-    python_best_practices_skill.md
+  src/
+    domain/
+    application/
+    infrastructure/
+  tests/
+    unit/
+    integration/
   scripts/
     generate_documentation_commit_push.py
   wiki/
     architecture.md
-  tests/
-    test_python_best_practices.py
 ```
 
 ## Recommended execution

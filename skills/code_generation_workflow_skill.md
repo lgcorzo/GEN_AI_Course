@@ -62,15 +62,16 @@ It is designed for feature development with high coverage requirements and a fin
 ## Example artifact flow
 
 ```text
-Code/
-  application/
-  domain/
-  infrastructure/
+feature-branch/
+  src/
+    domain/
+    application/
+    infrastructure/
   tests/
     unit/
     integration/
-  skills/
-    code_generation_workflow_skill.md
+  scripts/
+    generate_documentation_commit_push.py
   wiki/
     architecture.md
   README.md

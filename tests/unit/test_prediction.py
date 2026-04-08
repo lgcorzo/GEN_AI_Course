@@ -1,10 +1,10 @@
-import pytest
 from unittest.mock import MagicMock, patch
 
-from skills.python_best_practices_skill import ModelLoader, PredictionRequest, PredictionService
+from src.domain.prediction import PredictionRequest, PredictionService
+from src.infrastructure.model_loader import ModelLoader
 
 
-@patch("skills.python_best_practices_skill.ModelLoader.load_model")
+@patch("src.infrastructure.model_loader.ModelLoader.load_model")
 def test_prediction_service_uses_model_loader(mock_load_model):
     mock_model = MagicMock()
     mock_model.predict.return_value = [0.75]

@@ -13,3 +13,15 @@ This repository includes automation to keep documentation aligned with code chan
 - `scripts/generate_documentation_commit_push.py`: Generates a README documentation summary and ensures `wiki/architecture.md` is present for architecture documentation.
 - `wiki/architecture.md`: Contains architecture documentation, DDD boundaries, MLOps lifecycle guidance, and Mermaid diagrams for UML and execution flow.
 
+## Source and Tests
+
+The codebase follows Domain-Driven Design (DDD) principles with the following structure:
+
+- `src/domain/`: Core business entities, value objects, and domain services (e.g., `PredictionRequest`, `PredictionService`).
+- `src/application/`: Use cases, workflows, and orchestration services (e.g., `main.py`).
+- `src/infrastructure/`: Persistence, model loading, external integrations, and deployment adapters (e.g., `ModelLoader`).
+- `tests/unit/`: Unit tests for individual components (domain and infrastructure).
+- `tests/integration/`: Integration tests for end-to-end workflows (application).
+
+- `scripts/show_ddd_structure.py`: Demonstrates the DDD folder structure.
+
