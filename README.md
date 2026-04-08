@@ -34,11 +34,23 @@ The codebase follows Domain-Driven Design (DDD) principles with the following st
 - Run integration tests only: `pytest tests/integration/`
 - Run tests for a specific layer: `pytest tests/unit/domain/`
 
+## Environment Setup
+
+This project requires a Conda environment for proper dependency management:
+
+1. Install Miniconda or Anaconda
+2. Create environment: `conda env create -f settings/environment.yml`
+3. Activate environment: `conda activate genai-course`
+4. Run code/tests with environment activated
+5. Deactivate when done: `conda deactivate`
+
+All dependencies are version-pinned for reproducibility.
+
 <!-- DOC_SUMMARY_START -->
 ## Documentation Summary
 
-- Generated: 2026-04-08 15:45:18 UTC
-- Commit message: Create settings folder for conda environment configuration and update documentation
+- Generated: 2026-04-08 15:46:43 UTC
+- Commit message: Add package versions to environment.yml and document conda environment activation requirements
 - Updated files:
 - `README.md`
 - `skills/code_generation_workflow_skill.md`
