@@ -62,7 +62,7 @@ It is designed for feature development with high coverage requirements and a fin
 ## Example artifact flow
 
 ```text
-feature-branch/
+Code/
   application/
   domain/
   infrastructure/
