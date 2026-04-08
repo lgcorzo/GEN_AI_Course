@@ -23,6 +23,7 @@ The codebase follows Domain-Driven Design (DDD) principles with the following st
 - `tests/unit/domain/`: Unit tests for domain logic.
 - `tests/unit/infrastructure/`: Unit tests for adapters.
 - `tests/integration/application/`: Integration tests for workflows.
+- `settings/environment.yml`: Conda environment configuration with project dependencies.
 
 - `scripts/show_ddd_structure.py`: Demonstrates the DDD folder structure.
 
@@ -36,9 +37,10 @@ The codebase follows Domain-Driven Design (DDD) principles with the following st
 <!-- DOC_SUMMARY_START -->
 ## Documentation Summary
 
-- Generated: 2026-04-08 15:41:57 UTC
-- Commit message: Add unit tests to achieve 97% code coverage and update skills with coverage guidance
+- Generated: 2026-04-08 15:45:18 UTC
+- Commit message: Create settings folder for conda environment configuration and update documentation
 - Updated files:
+- `README.md`
 - `skills/code_generation_workflow_skill.md`
 - `skills/documentation_commit_push_skill.md`
 - `skills/python_best_practices_skill.md`
