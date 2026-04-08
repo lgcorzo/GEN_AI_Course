@@ -1,4 +1,5 @@
 import pickle
+import pytest
 
 from src.application.main import main
 from src.domain.prediction import PredictionRequest
@@ -10,6 +11,7 @@ class DummyModel:
         return [sum(sample) * 0.1 for sample in data]
 
 
+@pytest.mark.integration
 def test_main_integration_with_model_artifact(tmp_path, capsys):
     model_path = tmp_path / "model.pkl"
     with open(model_path, "wb") as handle:

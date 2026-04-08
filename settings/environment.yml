@@ -1,0 +1,17 @@
+name: genai-course
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12.1
+  - pip=24.0
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - scikit-learn=1.4.1
+  - pyyaml=6.0.1
+  - pytest=8.1.1
+  - pytest-cov=4.1.0
+  - pylint=3.1.0
+  - black=24.3.0
+  - pip:
+    - dataclasses

@@ -58,7 +58,8 @@ Provide a consistent foundation for Python development by combining modern style
 ```text
 project-root/
   README.md
-  environment.yml
+  settings/
+    environment.yml
   src/
     domain/
       entities.py
@@ -70,10 +71,15 @@ project-root/
       mlops.py
   tests/
     unit/
-      test_domain.py
-      test_infrastructure.py
+      domain/
+        test_entities.py
+        test_services.py
+      infrastructure/
+        test_persistence.py
+        test_mlops.py
     integration/
-      test_application.py
+      application/
+        test_workflows.py
   scripts/
     generate_documentation_commit_push.py
   wiki/
@@ -99,14 +105,41 @@ dependencies:
   - black
 ```
 
-## Practical guidance
+## Test Folder Structure
+
+The test folder combines test types (unit/integration) with DDD boundaries to provide clear organization:
+
+- `tests/unit/domain/`: Unit tests for domain entities and services, focusing on isolated business logic.
+- `tests/unit/infrastructure/`: Unit tests for infrastructure adapters, mocking external dependencies.
+- `tests/integration/application/`: Integration tests for application workflows, validating end-to-end behavior.
+
+This hierarchical structure ensures tests are co-located with the code they test while separating unit from integration concerns. You can run tests by type using `pytest tests/unit/` for fast unit tests or `pytest tests/integration/` for end-to-end validation.
+
+## Settings Folder
+
+The `settings/` folder contains configuration files for the project environment:
+
+- `settings/environment.yml`: Conda environment specification with all required dependencies and their versions. Use `conda env create -f settings/environment.yml` to set up the development environment.
+
+## Environment Setup
+
+This project uses Conda for environment management to ensure reproducible and isolated development environments:
+
+1. Install Miniconda or Anaconda if not already installed
+2. Create the environment: `conda env create -f settings/environment.yml`
+3. Activate the environment: `conda activate genai-course`
+4. The environment must be activated before running any code, tests, or development tools
+5. Deactivate when done: `conda deactivate`
+
+All dependencies are pinned to specific versions in `settings/environment.yml` to ensure consistency across different machines and deployments.
 
 - Start each feature with a domain concept and map technical requirements to domain terms.
 - Keep utility and infrastructure code separate from core domain logic.
 - Apply static analysis and formatting tools such as `pylint` and `black` regularly.
-- Use `conda` to manage environments and share `environment.yml` with the team.
+- Use `conda` to manage environments and share `settings/environment.yml` with the team.
 - Review code for PEP 8 compliance, readability, and DDD consistency during development.
 - Write tests with `pytest` and mock external calls using `@patch` decorators to keep unit tests isolated.
+- Aim for at least 95% test coverage using `pytest --cov=src`.
 
 ## Summary
 

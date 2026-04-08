@@ -56,14 +56,18 @@ The documentation follows MLOps lifecycle standards and Domain-Driven Design (DD
 ```text
 project-root/
   README.md
-  environment.yml
+  settings/
+    environment.yml
   src/
     domain/
     application/
     infrastructure/
   tests/
     unit/
+      domain/
+      infrastructure/
     integration/
+      application/
   scripts/
     generate_documentation_commit_push.py
   wiki/
@@ -75,6 +79,7 @@ project-root/
 - Run `python scripts/generate_documentation_commit_push.py --commit-message "Update docs and push" --push` before pushing changes.
 - In CI, run the same script to refresh docs and verify the generated content.
 - If using Git hooks, install the script as a pre-push helper.
+- Ensure the Conda environment is activated (`conda activate genai-course`) before running the script.
 
 ## Notes
 

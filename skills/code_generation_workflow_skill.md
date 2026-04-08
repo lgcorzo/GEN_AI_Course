@@ -16,7 +16,7 @@ It is designed for feature development with high coverage requirements and a fin
 - Translate requirements into domain concepts, services, and modules.
 - Follow PEP 8 and Domain-Driven Design structure.
 - Keep the feature implementation focused on its single responsibility.
-- Use Conda-managed environments for reproducibility.
+- Use Conda-managed environments for reproducibility - ensure `conda activate genai-course` before development.
 
 ## Step 2: Add unit tests for coverage
 
@@ -26,6 +26,7 @@ It is designed for feature development with high coverage requirements and a fin
 - Aim for at least `95%` coverage across the repository.
 - Ensure each PR maintains `95%` coverage for the code it introduces or changes.
 - Prefer small, deterministic tests that are easy to review and maintain.
+- Place unit tests in `tests/unit/` mirroring the DDD structure (e.g., `tests/unit/domain/` for domain tests).
 
 ### Unit test best practices
 
@@ -41,7 +42,7 @@ It is designed for feature development with high coverage requirements and a fin
 - Integration tests should exercise multiple modules together.
 - Mock only external services and APIs; let internal systems run normally.
 - Validate workflow behavior, data transformations, and component interactions.
-- Keep integration tests separate from unit tests in `tests/integration/`.
+- Keep integration tests separate from unit tests in `tests/integration/` mirroring the DDD structure (e.g., `tests/integration/application/` for workflow tests).
 
 ## Step 4: Generate feature documentation
 
@@ -63,13 +64,18 @@ It is designed for feature development with high coverage requirements and a fin
 
 ```text
 feature-branch/
+  settings/
+    environment.yml
   src/
     domain/
     application/
     infrastructure/
   tests/
     unit/
+      domain/
+      infrastructure/
     integration/
+      application/
   scripts/
     generate_documentation_commit_push.py
   wiki/

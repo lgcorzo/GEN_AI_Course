@@ -51,20 +51,29 @@ All dependencies are version-pinned for reproducibility.
 <!-- DOC_SUMMARY_START -->
 ## Documentation Summary
 
-- Generated: 2026-04-08 15:48:32 UTC
-- Commit message: Update README with environment creation status and verification
+- Generated: 2026-04-08 15:48:52 UTC
+- Commit message: Complete project restructuring: DDD architecture, hierarchical tests, conda environment, and comprehensive documentation
 - Updated files:
-- `README.md`
+- `.coverage`
+- `.vscode/settings.json`
+- `pyproject.toml`
+- `settings/environment.yml`
 - `skills/code_generation_workflow_skill.md`
 - `skills/documentation_commit_push_skill.md`
 - `skills/python_best_practices_skill.md`
-- `tests/integration/__pycache__/test_main.cpython-312-pytest-9.0.1.pyc`
+- `tests/__pycache__/conftest.cpython-312-pytest-8.1.1.pyc`
 - `tests/integration/__pycache__/test_prediction_integration.cpython-312-pytest-9.0.1.pyc`
-- `tests/integration/test_main.py`
+- `tests/integration/application/__pycache__/test_main.cpython-312-pytest-8.1.1.pyc`
+- `tests/integration/application/__pycache__/test_main.cpython-312-pytest-9.0.1.pyc`
+- `tests/integration/application/test_main.py`
 - `tests/unit/__pycache__/test_model_loader.cpython-312-pytest-9.0.1.pyc`
 - `tests/unit/__pycache__/test_prediction.cpython-312-pytest-9.0.1.pyc`
-- `tests/unit/test_model_loader.py`
-- `tests/unit/test_prediction.py`
+- `tests/unit/domain/__pycache__/test_prediction.cpython-312-pytest-8.1.1.pyc`
+- `tests/unit/domain/__pycache__/test_prediction.cpython-312-pytest-9.0.1.pyc`
+- `tests/unit/domain/test_prediction.py`
+- `tests/unit/infrastructure/__pycache__/test_model_loader.cpython-312-pytest-8.1.1.pyc`
+- `tests/unit/infrastructure/__pycache__/test_model_loader.cpython-312-pytest-9.0.1.pyc`
+- `tests/unit/infrastructure/test_model_loader.py`
 
 This section is generated automatically by `scripts/generate_documentation_commit_push.py`.
 <!-- DOC_SUMMARY_END -->
