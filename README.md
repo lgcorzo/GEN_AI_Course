@@ -1,31 +1,37 @@
 # GEN_AI_Course
 
-## Skills
+A comprehensive Python project demonstrating Domain-Driven Design (DDD), MLOps best practices, and modern development workflows.
 
-- `skills/python_best_practices_skill.md`: Defines best practices for Python development using PEP 8, Domain-Driven Design, MLOps, and Conda environment management.
-- `skills/documentation_commit_push_skill.md`: Defines the process for generating documentation on commit/push, updating `README.md`, and maintaining architecture documentation in `wiki/architecture.md`.
-- `skills/code_generation_workflow_skill.md`: Describes the feature development workflow from code generation to unit tests, integration tests, and final documentation.
+## 🚀 Quick Start
 
-## Documentation Automation
+This project uses GitHub Codespaces with pre-configured conda environment:
 
-This repository includes automation to keep documentation aligned with code changes.
+1. **Open in Codespace**: Click the "Code" button → "Create codespace on main"
+2. **Environment**: Automatically configured with `genai-course` conda environment
+3. **Development**: Start coding immediately - all dependencies are installed
 
-- `scripts/generate_documentation_commit_push.py`: Generates a README documentation summary and ensures `wiki/architecture.md` is present for architecture documentation.
-- `wiki/architecture.md`: Contains architecture documentation, DDD boundaries, MLOps lifecycle guidance, and Mermaid diagrams for UML and execution flow.
+### Manual Setup (if not using Codespaces)
 
-## Source and Tests
+```bash
+# Install Miniconda/Anaconda
+# Create environment
+conda env create -f settings/environment.yml
+# Activate environment
+conda activate genai-course
+```
 
-The codebase follows Domain-Driven Design (DDD) principles with the following structure:
+## 🏗️ Project Structure
 
-- `src/domain/`: Core business entities, value objects, and domain services (e.g., `PredictionRequest`, `PredictionService`).
-- `src/application/`: Use cases, workflows, and orchestration services (e.g., `main.py`).
-- `src/infrastructure/`: Persistence, model loading, external integrations, and deployment adapters (e.g., `ModelLoader`).
-- `tests/unit/domain/`: Unit tests for domain logic.
-- `tests/unit/infrastructure/`: Unit tests for adapters.
-- `tests/integration/application/`: Integration tests for workflows.
-- `settings/environment.yml`: Conda environment configuration with project dependencies.
-
-- `scripts/show_ddd_structure.py`: Demonstrates the DDD folder structure.
+- `src/`: Source code organized by DDD layers
+  - `domain/`: Business logic and entities
+  - `application/`: Use cases and workflows
+  - `infrastructure/`: External integrations and adapters
+- `tests/`: Hierarchical test structure
+  - `unit/`: Unit tests by DDD layer
+  - `integration/`: End-to-end workflow tests
+- `settings/`: Environment configuration
+- `skills/`: Development best practices documentation
+- `scripts/`: Automation utilities
 
 ## Running Tests
 
