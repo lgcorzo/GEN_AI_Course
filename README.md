@@ -36,10 +36,9 @@ The codebase follows Domain-Driven Design (DDD) principles with the following st
 <!-- DOC_SUMMARY_START -->
 ## Documentation Summary
 
-- Generated: 2026-04-08 15:38:02 UTC
-- Commit message: Refactor test structure to hierarchical unit/integration with DDD subfolders and update skills/README
+- Generated: 2026-04-08 15:41:57 UTC
+- Commit message: Add unit tests to achieve 97% code coverage and update skills with coverage guidance
 - Updated files:
-- `README.md`
 - `skills/code_generation_workflow_skill.md`
 - `skills/documentation_commit_push_skill.md`
 - `skills/python_best_practices_skill.md`
