@@ -1,3 +1,8 @@
+---
+name: python-best-practices
+description: "Use when: developing Python code. Best practices aligned with PEP 8, Domain-Driven Design, MLOps lifecycle, and Conda environment management."
+---
+
 # Python Best Practices Skill
 
 This skill defines the best practices for developing Python code aligned with the following standards:

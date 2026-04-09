@@ -1,3 +1,8 @@
+---
+name: documentation-commit-push
+description: "Use when: updating documentation during commits or pushes. Repeatable process for generating documentation that reflects code changes in README.md and architecture documentation."
+---
+
 # Documentation Commit & Push Skill
 
 This skill defines a repeatable process for generating documentation at commit and push time.

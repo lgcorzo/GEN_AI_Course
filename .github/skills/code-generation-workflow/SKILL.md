@@ -1,3 +1,8 @@
+---
+name: code-generation-workflow
+description: "Use when: implementing code features with tests and documentation. Structured workflow for producing code, tests, and documentation following PEP 8 and Domain-Driven Design."
+---
+
 # Code Generation Workflow Skill
 
 This skill describes a structured workflow for producing code, tests, and documentation.
