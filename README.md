@@ -57,31 +57,10 @@ All dependencies are version-pinned for reproducibility.
 <!-- DOC_SUMMARY_START -->
 ## Documentation Summary
 
-- Generated: 2026-04-09 10:07:56 UTC
-- Commit message: Add flake8 and mypy for code quality checks
+- Generated: 2026-04-09 10:08:16 UTC
+- Commit message: Update documentation for linting improvements
 - Updated files:
-- `.github/skills/code-generation-workflow/SKILL.md`
-- `settings/environment.yml`
-- `src/__pycache__/__init__.cpython-312.pyc`
-- `src/application/__init__.py`
-- `src/application/__pycache__/__init__.cpython-312.pyc`
-- `src/application/__pycache__/main.cpython-312.pyc`
-- `src/application/main.py`
-- `src/domain/__init__.py`
-- `src/domain/__pycache__/__init__.cpython-312.pyc`
-- `src/domain/__pycache__/prediction.cpython-312.pyc`
-- `src/domain/prediction.py`
-- `src/infrastructure/__init__.py`
-- `src/infrastructure/__pycache__/__init__.cpython-312.pyc`
-- `src/infrastructure/__pycache__/model_loader.cpython-312.pyc`
-- `src/infrastructure/model_loader.py`
-- `tests/__pycache__/conftest.cpython-312-pytest-8.1.1.pyc`
-- `tests/integration/application/__pycache__/test_main.cpython-312-pytest-8.1.1.pyc`
-- `tests/integration/application/test_main.py`
-- `tests/unit/domain/__pycache__/test_prediction.cpython-312-pytest-8.1.1.pyc`
-- `tests/unit/domain/test_prediction.py`
-- `tests/unit/infrastructure/__pycache__/test_model_loader.cpython-312-pytest-8.1.1.pyc`
-- `tests/unit/infrastructure/test_model_loader.py`
+- No tracked changes detected.
 
 This section is generated automatically by `scripts/generate_documentation_commit_push.py`.
 <!-- DOC_SUMMARY_END -->
