@@ -60,6 +60,7 @@ It is designed for feature development with high coverage requirements and a fin
 ## Recommended process for pull requests
 
 - Open the PR after the feature implementation and unit tests are in place.
+- Run `flake8` and `mypy` to ensure code quality and correctness before creating the PR.
 - Include a summary of changed files and test coverage results.
 - Run integration tests before final review.
 - Refresh documentation for the feature and verify that the README summary is up to date.

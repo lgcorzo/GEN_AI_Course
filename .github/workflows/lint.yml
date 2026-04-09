@@ -1,0 +1,21 @@
+name: Lint and type check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-activate-base: false
+          python-version: 3.12
+      - name: Create conda environment
+        run: conda env create -f settings/environment.yml
+      - name: Run flake8
+        run: conda run -n genai-course flake8 .
+      - name: Run mypy
+        run: conda run -n genai-course mypy src tests

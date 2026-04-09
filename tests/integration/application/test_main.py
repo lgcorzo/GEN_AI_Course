@@ -2,7 +2,6 @@ import pickle
 import pytest
 
 from src.application.main import main
-from src.domain.prediction import PredictionRequest
 from src.infrastructure.model_loader import ModelLoader
 
 
@@ -19,7 +18,9 @@ def test_main_integration_with_model_artifact(tmp_path, capsys):
 
     # Mock the ModelLoader path
     import src.application.main
-    src.application.main.ModelLoader = lambda path: ModelLoader(str(model_path))
+    src.application.main.ModelLoader = (
+        lambda path: ModelLoader(str(model_path))
+    )
 
     main()
 
