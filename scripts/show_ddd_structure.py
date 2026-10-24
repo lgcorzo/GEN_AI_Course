@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Script to demonstrate the DDD folder structure."""
 
-import os
 from pathlib import Path
 
 
